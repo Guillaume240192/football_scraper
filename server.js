@@ -10,7 +10,7 @@ const app = express();
 
 let clubNameTab = [];
 
-
+/*
 axios(url)
 .then(response => {
     const html = response.data;
@@ -21,11 +21,11 @@ axios(url)
         clubNameTab.push(clubName);
         //console.log(clubName);
     })
-    console.log(clubNameTab);
+    //console.log(clubNameTab);
     
 }).catch(err => console.log(err))
 
-
+*/
 
 
 
@@ -42,7 +42,7 @@ app.get('/', (req,res)=>{
             clubNameTab.push(clubName);
             //console.log(clubName);
         })
-        console.log(clubNameTab);
+        //console.log(clubNameTab);
         
     }).catch(err => console.log(err))
     res.json(clubNameTab);
